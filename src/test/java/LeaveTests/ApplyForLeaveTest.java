@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 import resources.BaseClass;
 
 public class ApplyForLeaveTest extends BaseClass {
-
     LandingPageObject landingPageObject;
     ApplyPageObject applyPageObject;
     TabsObject tabsObject;
@@ -28,6 +27,7 @@ public class ApplyForLeaveTest extends BaseClass {
         applyPageObject.selectDate("9", "Jan", "2021");
         applyPageObject.enterComment("My God is Able");
         applyPageObject.clickApplyBtn();
+
 
     }
 

@@ -1,0 +1,6 @@
+LeaveTests/VerifyAllCheckboxesSelectedTest.class
+LeaveTests/ApplyForLeaveTest.class
+UserManagementTests/DeleteUserTest.class
+UserManagementTests/AddUserTest.class
+LoginTests/LoginTest.class
+LeaveTests/CancelLeaveFromMyLeavePageTest.class

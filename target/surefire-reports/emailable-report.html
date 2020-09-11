@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Command line suite</th></tr>
+<tr><td><a href="#t0">Command line test</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">80,045</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">LeaveTests.ApplyForLeaveTest</td><td><a href="#m0">applyForLeave</a></td><td rowspan="1">1599687293665</td><td rowspan="1">16826</td></tr><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">LeaveTests.CancelLeaveFromMyLeavePageTest</td><td><a href="#m1">cancelLeaveWithTypeVacationFromMyLeavePage</a></td><td rowspan="1">1599687284576</td><td rowspan="1">5331</td></tr><tr class="passedodd"><td rowspan="1">LeaveTests.VerifyAllCheckboxesSelectedTest</td><td><a href="#m2">verifyAllCheckBoxesSelected</a></td><td rowspan="1">1599687275941</td><td rowspan="1">4311</td></tr><tr class="passedeven"><td rowspan="2">LoginTests.LoginTest</td><td><a href="#m3">userSignInWithInvalidCredentials</a></td><td rowspan="1">1599687267186</td><td rowspan="1">2467</td></tr><tr class="passedeven"><td><a href="#m4">userSignInWithValidCredentials</a></td><td rowspan="1">1599687269659</td><td rowspan="1">2118</td></tr><tr class="passedodd"><td rowspan="2">UserManagementTests.AddUserTest</td><td><a href="#m5">addNewUser</a></td><td rowspan="1">1599687327937</td><td rowspan="1">5271</td></tr><tr class="passedodd"><td><a href="#m6">verifyNewUserAdded</a></td><td rowspan="1">1599687333209</td><td rowspan="1">4404</td></tr><tr class="passedeven"><td rowspan="1">UserManagementTests.DeleteUserTest</td><td><a href="#m7">deleteUser</a></td><td rowspan="1">1599687314846</td><td rowspan="1">9269</td></tr></tbody>
+</table>
+<h2>Command line test</h2><h3 id="m0">LeaveTests.ApplyForLeaveTest#applyForLeave</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=85.0.4183.83)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Pauls-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:82:76bf:6aa2:7e92%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/n4/1w5frwzs6nn...}, goog:chromeOptions: {debuggerAddress: localhost:58718}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8b96857cf471d1768f69849674192150
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at PageObject.ApplyPageObject.selectDate(ApplyPageObject.java:35)
+	at LeaveTests.ApplyForLeaveTest.applyForLeave(ApplyForLeaveTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 41 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">LeaveTests.CancelLeaveFromMyLeavePageTest#cancelLeaveWithTypeVacationFromMyLeavePage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">LeaveTests.VerifyAllCheckboxesSelectedTest#verifyAllCheckBoxesSelected</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">LoginTests.LoginTest#userSignInWithInvalidCredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">LoginTests.LoginTest#userSignInWithValidCredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">UserManagementTests.AddUserTest#addNewUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">UserManagementTests.AddUserTest#verifyNewUserAdded</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">UserManagementTests.DeleteUserTest#deleteUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
